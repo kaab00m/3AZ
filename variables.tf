@@ -17,10 +17,10 @@ terraform {
 }
 
 
-# variable "region" {
-#   description = "Region Name"
-#   default     = "ap-southeast-1"
-# }
+variable "region" {
+   description = "Region Name"
+   default     = "ap-southeast-1"
+}
 
 variable "aws_region" {
   description = "EC2 Region for the VPC"
