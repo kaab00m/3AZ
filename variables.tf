@@ -1,9 +1,9 @@
-# provider "aws" {
-#   region     = var.aws_region
+provider "aws" {
+   region     = var.aws_region
 #   access_key = ""
 #   secret_key = ""
 #   #profile = "TEST"  # Change this to your AWS CLI Profile
-# }
+}
 
 terraform {
   required_providers {
@@ -17,10 +17,10 @@ terraform {
 }
 
 
-variable "region" {
-   description = "Region Name"
-   default     = "ap-southeast-1"
-}
+#variable "region" {
+#   description = "Region Name"
+#   default     = "ap-southeast-1"
+#}
 
 variable "aws_region" {
   description = "EC2 Region for the VPC"
